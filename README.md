@@ -3,6 +3,9 @@
 ```
 mkdir hello
 cd hello
+```
+```
+sudo apt install -y npm
 npm init -y
 npm install express
 ```
