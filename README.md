@@ -46,6 +46,13 @@ document.write("Hello world!!");
 EOF
 ```
 ```
+cat <<EOF > index.html
+<script type="text/javascript" src="./alert.js"></script>
+<script type="text/javascript" src="./hello.js"></script>
+EOF
+```
+```
+cd ..
 npm start
 ```
 ```
