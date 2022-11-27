@@ -32,6 +32,7 @@ app.get('*', (req, res) => {
 
 // Start the server.
 app.listen(port);
+console.log(\`Listening on port ${port}...\`);
 EOF
 ```
 ```
