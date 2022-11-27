@@ -45,28 +45,26 @@ EOF
 # 4. Create index.html and some scripts working in browser
 ```
 mkdir app
-cd app
 ```
 ```
-cat <<EOF > index.html
+cat <<EOF > app/index.html
 <script type="text/javascript" src="./alert.js"></script>
 <script type="text/javascript" src="./hello.js"></script>
 EOF
 ```
 ```
-cat <<EOF > alert.js
+cat <<EOF > app/alert.js
 alert("hello world");
 EOF
 ```
 ```
-cat <<EOF > hello.js
+cat <<EOF > app/hello.js
 document.write("Hello world!!");
 EOF
 ```
 
 # 5. Test
 ```
-cd ..
 npm start
 ```
 ```
@@ -76,7 +74,7 @@ google-chrome-stable http://localhost:3000
 # 6. Create Login form
 The function of **validata()** in login.js executes on click of login button in index.html. See **onclick="validate()"** in index.html.
 ```
-cat <<EOF > login.js
+cat <<EOF > app/login.js
 var attempt = 3; // Variable to count number of attempts.
 
 // Below function Executes on click of login button.
@@ -104,7 +102,7 @@ function validate(){
 EOF
 ```
 ```
-cat <<EOF > index.html
+cat <<EOF > app/index.html
 <html>
   <head>
     <title>Javascript Login Form Validation</title>
