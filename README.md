@@ -1,14 +1,20 @@
 # JavaScriptHelloWorld
 
+# 1. Create directory for App
 ```
 mkdir hello
 cd hello
 ```
+
+# 2. Install npm and express
 ```
 sudo apt install -y npm
 npm init -y
 npm install express
 ```
+
+# 3. Create server.js
+If the "scripts" object does not define a "start" property, npm will run node server.js.
 ```
 cat <<EOF > server.js 
 const express = require('express');
@@ -35,9 +41,17 @@ app.listen(port);
 console.log(\`Listening on port ${port}...\`);
 EOF
 ```
+
+# 4. Create index.html and some scripts working in browser
 ```
 mkdir app
 cd app
+```
+```
+cat <<EOF > index.html
+<script type="text/javascript" src="./alert.js"></script>
+<script type="text/javascript" src="./hello.js"></script>
+EOF
 ```
 ```
 cat <<EOF > alert.js
@@ -49,12 +63,8 @@ cat <<EOF > hello.js
 document.write("Hello world!!");
 EOF
 ```
-```
-cat <<EOF > index.html
-<script type="text/javascript" src="./alert.js"></script>
-<script type="text/javascript" src="./hello.js"></script>
-EOF
-```
+
+# 5. Test
 ```
 cd ..
 npm start
