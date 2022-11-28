@@ -135,7 +135,7 @@ cat <<EOF > app/index.html
 EOF
 ```
 ```
-cat <<EOF > success.html 
+cat <<EOF > app/success.html 
 Login successfully
 EOF
 ```
