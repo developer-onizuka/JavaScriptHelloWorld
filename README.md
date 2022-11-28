@@ -72,7 +72,8 @@ google-chrome-stable http://localhost:3000
 ```
 
 # 6. Create Login form
-The function of **validata()** in login.js executes on click of login button in index.html. See **onclick="validate()"** in index.html.
+The function of **validata()** in login.js executes on click of login button in index.html. See **onclick="validate()"** in index.html.<br>
+Start again npm and access http://localhost:3000 again.
 ```
 cat <<EOF > app/login.js
 var attempt = 3; // Variable to count number of attempts.
